@@ -90,7 +90,7 @@ namespace FileMig
 
                 if (fo.validate())
                 {
-
+                    fo.save();
 
                 }
 
