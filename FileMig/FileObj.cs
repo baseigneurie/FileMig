@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using FileMig;
 using System.IO;
+using Newtonsoft.Json;
+using System.Windows.Forms;
 
 namespace FileMig
 {
@@ -24,6 +26,12 @@ namespace FileMig
         public bool validate()
         {
             return checkFile(this);
+        }
+
+        public void save()
+        {
+            string line = prepSave();
+            saveBatch(line);
         }
 
 
@@ -52,6 +60,35 @@ namespace FileMig
             }
 
             return true;
+        }
+
+
+        private string prepSave()
+        {
+            
+            string appPath = Path.GetDirectoryName(Application.ExecutablePath);
+            string saveDir = string.Format(@"{0}\res\", appPath);
+
+            if (!Directory.Exists(saveDir))
+            {
+                Directory.CreateDirectory(saveDir);
+            }
+
+            saveDir = string.Format(@"{0}{1}", saveDir, (this.batchName + ".txt"));
+
+            return saveDir;
+        }
+
+        private void saveBatch(string dir)
+        {
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.NullValueHandling = NullValueHandling.Ignore;
+
+            using (StreamWriter sw = new StreamWriter(dir))
+            using (JsonWriter writer = new JsonTextWriter(sw))
+            {
+                serializer.Serialize(writer, this);
+            }
         }
 
 

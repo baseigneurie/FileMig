@@ -18,3 +18,5 @@ C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.frmFileMain.resources
 C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.Properties.Resources.resources
 C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.Setup.resources
 C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.csproj.GenerateResource.Cache
+C:\dev\VisualStudio\FileMig\FileMig\bin\Debug\Newtonsoft.Json.dll
+C:\dev\VisualStudio\FileMig\FileMig\bin\Debug\Newtonsoft.Json.xml
