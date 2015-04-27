@@ -7,21 +7,26 @@ using FileMig;
 using System.IO;
 using Newtonsoft.Json;
 using System.Windows.Forms;
+using FileMig.FileObjects;
 
 namespace FileMig
 {
-    class FileObj
+    class FileIO
     {
         private helper h = new helper();
+        private BatchLine batLine = new BatchLine();
+        private BatchObject batObj = new BatchObject();
 
-        public string from { get; set; }
-        public string to { get; set; }
-        public string name { get; set; }
-        public int opt { get; set; }
-        public int ftp { get; set; }
-        public string fileName { get; set; }
-        public string batchName { get; set; }
+        public FileIO(BatchLine bl, BatchObject bo)
+        {
+            this.batLine = bl;
+            this.batObj = bo;
+        }
 
+        public FileIO(BatchLine bl)
+        {
+            this.batLine = bl;
+        }
 
         public bool validate()
         {
@@ -35,7 +40,7 @@ namespace FileMig
         }
 
 
-        private bool checkFile(FileObj fo)
+        private bool checkFile(FileIO fo)
         {
             string s;
             int len = 0;

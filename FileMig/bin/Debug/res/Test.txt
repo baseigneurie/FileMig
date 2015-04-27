@@ -1,1 +1,1 @@
-{"from":"C:\\temp\\tester.txt","to":"C:\\Users\\beefy\\Documents\\tester.txt","name":"secondline","opt":0,"ftp":0,"fileName":"tester.txt","batchName":"Test"}
+{"from":"C:\\Temp\\tester.txt","to":"\\\\s-filebox2\\home\\bseigneurie\\My Documents\\tester.txt","name":"FirstLine","opt":0,"ftp":0,"fileName":"tester.txt","batchName":"Test"}

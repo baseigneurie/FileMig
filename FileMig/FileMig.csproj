@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileObj.cs" />
+    <Compile Include="FileObjects\BatchLine.cs" />
+    <Compile Include="FileIO.cs" />
+    <Compile Include="FileObjects\BatchObject.cs" />
     <Compile Include="helper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
