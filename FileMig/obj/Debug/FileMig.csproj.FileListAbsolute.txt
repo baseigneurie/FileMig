@@ -1,0 +1,20 @@
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.frmFileMain.resources
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.Properties.Resources.resources
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.Setup.resources
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.csproj.GenerateResource.Cache
+C:\Workspace\Visual Studio\FileMig\FileMig\bin\Debug\FileMig.exe.config
+C:\Workspace\Visual Studio\FileMig\FileMig\bin\Debug\FileMig.exe
+C:\Workspace\Visual Studio\FileMig\FileMig\bin\Debug\FileMig.pdb
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.csprojResolveAssemblyReference.cache
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.exe
+C:\Workspace\Visual Studio\FileMig\FileMig\obj\Debug\FileMig.pdb
+C:\dev\VisualStudio\FileMig\FileMig\bin\Debug\FileMig.exe.config
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.exe
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.pdb
+C:\dev\VisualStudio\FileMig\FileMig\bin\Debug\FileMig.exe
+C:\dev\VisualStudio\FileMig\FileMig\bin\Debug\FileMig.pdb
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.csprojResolveAssemblyReference.cache
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.frmFileMain.resources
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.Properties.Resources.resources
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.Setup.resources
+C:\dev\VisualStudio\FileMig\FileMig\obj\Debug\FileMig.csproj.GenerateResource.Cache
