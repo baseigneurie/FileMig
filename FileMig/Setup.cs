@@ -88,9 +88,10 @@ namespace FileMig
                 fo.opt = cboMethod.SelectedIndex;
                 fo.ftp = cboFTP.SelectedIndex;
 
-               if (fo.validate())
+                if (fo.validate())
                 {
-                    fo.save();
+
+
                 }
 
 
