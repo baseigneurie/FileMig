@@ -76,7 +76,7 @@ namespace FileMig
 
         private void btnSaveBatch_Click(object sender, EventArgs e)
         {
-            FileObj fo = new FileObj();
+            FileIO fo = new FileIO();
 
             if (saveCheck())
             {
@@ -91,7 +91,6 @@ namespace FileMig
                 if (fo.validate())
                 {
                     fo.save();
-
                 }
 
 

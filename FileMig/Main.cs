@@ -18,12 +18,10 @@ namespace FileMig
         {
             InitializeComponent();
 
-
             //string path = @"C:\temp\tester.txt";
 
             btnMigrate.Enabled = false;
             btnEditBatch.Enabled = false;
-            
             
         }
 
