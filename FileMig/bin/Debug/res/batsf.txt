@@ -1,0 +1,1 @@
+{"lineID":1,"from":"C:\\temp\\tester.txt","to":"C:\\Users\\beefy\\Documents\\tester.txt","listName":"Jimmy Johnson","opt":0,"ftp":0,"fileName":"tester.txt","batchID":0}

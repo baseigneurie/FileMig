@@ -30,34 +30,34 @@ namespace FileMig
 
         public bool validate()
         {
-            return checkFile(this);
+            return checkFile();
         }
 
         public void save()
         {
-            string line = prepSave();
-            saveBatch(line);
+            string location = prepSave();
+            saveBatch(location);
         }
 
 
-        private bool checkFile(FileIO fo)
+        private bool checkFile()
         {
             string s;
             int len = 0;
 
-            if (!File.Exists(fo.from))
+            if (!File.Exists(batLine.from))
             {
                 h.alert("Source path doesn't exist. Please check your information and try again.", "File Error");
                 return false;
             }
 
-            s = fo.to;
-            len = s.Length - (fo.fileName.Length + 1);
+            s = batLine.to;
+            len = s.Length - (batLine.fileName.Length + 1);
             s = s.Substring(0, len);
 
             if (Directory.Exists(s))
             {
-                if (File.Exists(fo.to))
+                if (File.Exists(batLine.to))
                 {
                     h.alert("Destination path doesn't exist. Please check your information and try again.", "File Error");
                     return false;
@@ -79,7 +79,7 @@ namespace FileMig
                 Directory.CreateDirectory(saveDir);
             }
 
-            saveDir = string.Format(@"{0}{1}", saveDir, (this.batchName + ".txt"));
+            saveDir = string.Format(@"{0}{1}", saveDir, "batsf.txt");
 
             return saveDir;
         }
@@ -88,14 +88,12 @@ namespace FileMig
         {
             JsonSerializer serializer = new JsonSerializer();
             serializer.NullValueHandling = NullValueHandling.Ignore;
-
             using (StreamWriter sw = new StreamWriter(dir))
             using (JsonWriter writer = new JsonTextWriter(sw))
             {
-                serializer.Serialize(writer, this);
+                serializer.Serialize(writer, batLine);
             }
         }
-
 
     }
 }

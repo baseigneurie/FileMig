@@ -16,5 +16,15 @@ namespace FileMig.FileObjects
         public int ftp { get; set; }
         public string fileName { get; set; }
         public int batchID { get; set; }
+
+        public void autoInc()
+        {
+            this.lineID++;
+        }
+
     }
+
+
+
+
 }

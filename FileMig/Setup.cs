@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FileMig.FileObjects;
 
 namespace FileMig
 {
@@ -14,6 +15,8 @@ namespace FileMig
     {
         private string fname;
         private helper h = new helper();
+        private BatchLine bl = new BatchLine();
+        private BatchObject bo = new BatchObject();
 
         public Setup()
         {
@@ -76,23 +79,23 @@ namespace FileMig
 
         private void btnSaveBatch_Click(object sender, EventArgs e)
         {
-            FileIO fo = new FileIO();
 
             if (saveCheck())
             {
-                fo.batchName = txtBatName.Text;
-                fo.fileName = fname;
-                fo.name = txtScriptName.Text;
-                fo.from = txtFromDir.Text;
-                fo.to = txtToDir.Text;
-                fo.opt = cboMethod.SelectedIndex;
-                fo.ftp = cboFTP.SelectedIndex;
+                bo.batchName = txtBatName.Text;
+                bl.fileName = fname;
+                bl.listName = txtScriptName.Text;
+                bl.from = txtFromDir.Text;
+                bl.to = txtToDir.Text;
+                bl.opt = cboMethod.SelectedIndex;
+                bl.ftp = cboFTP.SelectedIndex;
 
-                if (fo.validate())
+                FileIO fio = new FileIO(bl, bo);
+
+                if (fio.validate())
                 {
-                    fo.save();
+                    fio.save();
                 }
-
 
             }
 

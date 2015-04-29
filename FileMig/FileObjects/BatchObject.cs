@@ -11,5 +11,11 @@ namespace FileMig.FileObjects
         public int batchID { get; set; }
         public string batchName { get; set; }
         public IEnumerable<BatchLine> batchLines { get; set; }
+
+        public void autoInc()
+        {
+            this.batchID++;
+        }
+
     }
 }
